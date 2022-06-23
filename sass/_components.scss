@@ -204,7 +204,7 @@
 .overview {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid var(--color-grey-light-2);
+    border-bottom: var(--line);
 
     
     &__heading {
@@ -295,3 +295,27 @@
         box-sizing: none;
     }
 }
+
+
+/////////////////////////////////////////////////
+// PARAGRAPH
+.paragraph:not(:last-of-type) { // to affect only the same type of element
+    margin-bottom: 2rem;
+}
+
+/////////////////////////////////////////////////
+// LIST
+.list {
+    margin: 3rem 0;
+    list-style: none;
+    padding: 3rem;
+    border-top: var(--line);
+    border-bottom: var(--line);
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/////////////////////////////////////////////////
+// RECOMMEND
